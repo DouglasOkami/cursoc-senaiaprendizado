@@ -7,13 +7,13 @@ namespace projeto22
         static void Main(string[] args)
         {
 
-            int maior = 0, menor = 0;
-            int[] temp = new int[12];
+            double maior = 0, menor = 0;
+            double[] temp = new double[12];
 
             for (int i = 0; i < 12; i++)
             {
                 Console.WriteLine($"Digite a temperatura do {i + 1}º mes de 12 meses");
-                temp[i] = int.Parse(Console.ReadLine());
+                temp[i] = double.Parse(Console.ReadLine());
                 if (i == 0)
                 {
                     menor = temp[0];
