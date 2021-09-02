@@ -1,0 +1,16 @@
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet21\bin\Debug\net5.0\projet21.exe
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet21\bin\Debug\net5.0\projet21.deps.json
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet21\bin\Debug\net5.0\projet21.runtimeconfig.json
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet21\bin\Debug\net5.0\projet21.runtimeconfig.dev.json
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet21\bin\Debug\net5.0\projet21.dll
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet21\bin\Debug\net5.0\ref\projet21.dll
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet21\bin\Debug\net5.0\projet21.pdb
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet21\obj\Debug\net5.0\projet21.csproj.AssemblyReference.cache
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet21\obj\Debug\net5.0\projet21.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet21\obj\Debug\net5.0\projet21.AssemblyInfoInputs.cache
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet21\obj\Debug\net5.0\projet21.AssemblyInfo.cs
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet21\obj\Debug\net5.0\projet21.csproj.CoreCompileInputs.cache
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet21\obj\Debug\net5.0\projet21.dll
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet21\obj\Debug\net5.0\ref\projet21.dll
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet21\obj\Debug\net5.0\projet21.pdb
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet21\obj\Debug\net5.0\projet21.genruntimeconfig.cache

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dev\\Documents\\Douglas Da Silva Ferreira\\projeto22\\projeto22.csproj",
+      "projectUniqueName": "C:\\Users\\dev\\Documents\\projetoCsharpDouglasGit\\projet22\\projeto22.csproj",
       "projectName": "projeto22",
-      "projectPath": "C:\\Users\\dev\\Documents\\Douglas Da Silva Ferreira\\projeto22\\projeto22.csproj",
+      "projectPath": "C:\\Users\\dev\\Documents\\projetoCsharpDouglasGit\\projet22\\projeto22.csproj",
       "packagesPath": "C:\\Users\\dev\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dev\\Documents\\Douglas Da Silva Ferreira\\projeto22\\obj\\",
+      "outputPath": "C:\\Users\\dev\\Documents\\projetoCsharpDouglasGit\\projet22\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dev\\AppData\\Roaming\\NuGet\\NuGet.Config"

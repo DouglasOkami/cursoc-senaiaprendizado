@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dev\\Documents\\Douglas Da Silva Ferreira\\projet21\\projet21.csproj": {}
+    "C:\\Users\\dev\\Documents\\projetoCsharpDouglasGit\\projet21\\projet21.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dev\\Documents\\Douglas Da Silva Ferreira\\projet21\\projet21.csproj": {
+    "C:\\Users\\dev\\Documents\\projetoCsharpDouglasGit\\projet21\\projet21.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dev\\Documents\\Douglas Da Silva Ferreira\\projet21\\projet21.csproj",
+        "projectUniqueName": "C:\\Users\\dev\\Documents\\projetoCsharpDouglasGit\\projet21\\projet21.csproj",
         "projectName": "projet21",
-        "projectPath": "C:\\Users\\dev\\Documents\\Douglas Da Silva Ferreira\\projet21\\projet21.csproj",
+        "projectPath": "C:\\Users\\dev\\Documents\\projetoCsharpDouglasGit\\projet21\\projet21.csproj",
         "packagesPath": "C:\\Users\\dev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dev\\Documents\\Douglas Da Silva Ferreira\\projet21\\obj\\",
+        "outputPath": "C:\\Users\\dev\\Documents\\projetoCsharpDouglasGit\\projet21\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dev\\AppData\\Roaming\\NuGet\\NuGet.Config"

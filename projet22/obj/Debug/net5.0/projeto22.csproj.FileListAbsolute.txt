@@ -14,3 +14,19 @@ C:\Users\dev\Documents\Douglas Da Silva Ferreira\projeto22\obj\Debug\net5.0\proj
 C:\Users\dev\Documents\Douglas Da Silva Ferreira\projeto22\obj\Debug\net5.0\ref\projeto22.dll
 C:\Users\dev\Documents\Douglas Da Silva Ferreira\projeto22\obj\Debug\net5.0\projeto22.pdb
 C:\Users\dev\Documents\Douglas Da Silva Ferreira\projeto22\obj\Debug\net5.0\projeto22.genruntimeconfig.cache
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet22\bin\Debug\net5.0\projeto22.exe
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet22\bin\Debug\net5.0\projeto22.deps.json
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet22\bin\Debug\net5.0\projeto22.runtimeconfig.json
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet22\bin\Debug\net5.0\projeto22.runtimeconfig.dev.json
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet22\bin\Debug\net5.0\projeto22.dll
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet22\bin\Debug\net5.0\ref\projeto22.dll
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet22\bin\Debug\net5.0\projeto22.pdb
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet22\obj\Debug\net5.0\projeto22.csproj.AssemblyReference.cache
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet22\obj\Debug\net5.0\projeto22.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet22\obj\Debug\net5.0\projeto22.AssemblyInfoInputs.cache
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet22\obj\Debug\net5.0\projeto22.AssemblyInfo.cs
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet22\obj\Debug\net5.0\projeto22.csproj.CoreCompileInputs.cache
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet22\obj\Debug\net5.0\projeto22.dll
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet22\obj\Debug\net5.0\ref\projeto22.dll
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet22\obj\Debug\net5.0\projeto22.pdb
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet22\obj\Debug\net5.0\projeto22.genruntimeconfig.cache
