@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Primeira Projeto/1.0.0": {
+        "runtime": {
+          "Primeira Projeto.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Primeira Projeto/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

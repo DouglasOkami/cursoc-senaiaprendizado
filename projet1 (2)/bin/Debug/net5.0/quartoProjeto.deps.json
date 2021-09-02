@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "quartoProjeto/1.0.0": {
+        "runtime": {
+          "quartoProjeto.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "quartoProjeto/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

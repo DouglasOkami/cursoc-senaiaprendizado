@@ -1,0 +1,16 @@
+C:\Users\dev\Documents\Douglas Da Silva Ferreira\Primeira Projeto\bin\Debug\net5.0\Primeira Projeto.exe
+C:\Users\dev\Documents\Douglas Da Silva Ferreira\Primeira Projeto\bin\Debug\net5.0\Primeira Projeto.deps.json
+C:\Users\dev\Documents\Douglas Da Silva Ferreira\Primeira Projeto\bin\Debug\net5.0\Primeira Projeto.runtimeconfig.json
+C:\Users\dev\Documents\Douglas Da Silva Ferreira\Primeira Projeto\bin\Debug\net5.0\Primeira Projeto.runtimeconfig.dev.json
+C:\Users\dev\Documents\Douglas Da Silva Ferreira\Primeira Projeto\bin\Debug\net5.0\Primeira Projeto.dll
+C:\Users\dev\Documents\Douglas Da Silva Ferreira\Primeira Projeto\bin\Debug\net5.0\ref\Primeira Projeto.dll
+C:\Users\dev\Documents\Douglas Da Silva Ferreira\Primeira Projeto\bin\Debug\net5.0\Primeira Projeto.pdb
+C:\Users\dev\Documents\Douglas Da Silva Ferreira\Primeira Projeto\obj\Debug\net5.0\Primeira Projeto.csproj.AssemblyReference.cache
+C:\Users\dev\Documents\Douglas Da Silva Ferreira\Primeira Projeto\obj\Debug\net5.0\Primeira Projeto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dev\Documents\Douglas Da Silva Ferreira\Primeira Projeto\obj\Debug\net5.0\Primeira Projeto.AssemblyInfoInputs.cache
+C:\Users\dev\Documents\Douglas Da Silva Ferreira\Primeira Projeto\obj\Debug\net5.0\Primeira Projeto.AssemblyInfo.cs
+C:\Users\dev\Documents\Douglas Da Silva Ferreira\Primeira Projeto\obj\Debug\net5.0\Primeira Projeto.csproj.CoreCompileInputs.cache
+C:\Users\dev\Documents\Douglas Da Silva Ferreira\Primeira Projeto\obj\Debug\net5.0\Primeira Projeto.dll
+C:\Users\dev\Documents\Douglas Da Silva Ferreira\Primeira Projeto\obj\Debug\net5.0\ref\Primeira Projeto.dll
+C:\Users\dev\Documents\Douglas Da Silva Ferreira\Primeira Projeto\obj\Debug\net5.0\Primeira Projeto.pdb
+C:\Users\dev\Documents\Douglas Da Silva Ferreira\Primeira Projeto\obj\Debug\net5.0\Primeira Projeto.genruntimeconfig.cache

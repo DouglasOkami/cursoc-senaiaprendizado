@@ -1,0 +1,16 @@
+C:\Users\dev\Documents\Douglas Da Silva Ferreira\tabuada DoCem\bin\Debug\net5.0\tabuada DoCem.exe
+C:\Users\dev\Documents\Douglas Da Silva Ferreira\tabuada DoCem\bin\Debug\net5.0\tabuada DoCem.deps.json
+C:\Users\dev\Documents\Douglas Da Silva Ferreira\tabuada DoCem\bin\Debug\net5.0\tabuada DoCem.runtimeconfig.json
+C:\Users\dev\Documents\Douglas Da Silva Ferreira\tabuada DoCem\bin\Debug\net5.0\tabuada DoCem.runtimeconfig.dev.json
+C:\Users\dev\Documents\Douglas Da Silva Ferreira\tabuada DoCem\bin\Debug\net5.0\tabuada DoCem.dll
+C:\Users\dev\Documents\Douglas Da Silva Ferreira\tabuada DoCem\bin\Debug\net5.0\ref\tabuada DoCem.dll
+C:\Users\dev\Documents\Douglas Da Silva Ferreira\tabuada DoCem\bin\Debug\net5.0\tabuada DoCem.pdb
+C:\Users\dev\Documents\Douglas Da Silva Ferreira\tabuada DoCem\obj\Debug\net5.0\tabuada DoCem.csproj.AssemblyReference.cache
+C:\Users\dev\Documents\Douglas Da Silva Ferreira\tabuada DoCem\obj\Debug\net5.0\tabuada DoCem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dev\Documents\Douglas Da Silva Ferreira\tabuada DoCem\obj\Debug\net5.0\tabuada DoCem.AssemblyInfoInputs.cache
+C:\Users\dev\Documents\Douglas Da Silva Ferreira\tabuada DoCem\obj\Debug\net5.0\tabuada DoCem.AssemblyInfo.cs
+C:\Users\dev\Documents\Douglas Da Silva Ferreira\tabuada DoCem\obj\Debug\net5.0\tabuada DoCem.csproj.CoreCompileInputs.cache
+C:\Users\dev\Documents\Douglas Da Silva Ferreira\tabuada DoCem\obj\Debug\net5.0\tabuada DoCem.dll
+C:\Users\dev\Documents\Douglas Da Silva Ferreira\tabuada DoCem\obj\Debug\net5.0\ref\tabuada DoCem.dll
+C:\Users\dev\Documents\Douglas Da Silva Ferreira\tabuada DoCem\obj\Debug\net5.0\tabuada DoCem.pdb
+C:\Users\dev\Documents\Douglas Da Silva Ferreira\tabuada DoCem\obj\Debug\net5.0\tabuada DoCem.genruntimeconfig.cache
