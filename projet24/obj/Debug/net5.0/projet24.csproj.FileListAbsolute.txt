@@ -1,0 +1,16 @@
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet24\bin\Debug\net5.0\projet24.exe
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet24\bin\Debug\net5.0\projet24.deps.json
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet24\bin\Debug\net5.0\projet24.runtimeconfig.json
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet24\bin\Debug\net5.0\projet24.runtimeconfig.dev.json
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet24\bin\Debug\net5.0\projet24.dll
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet24\bin\Debug\net5.0\ref\projet24.dll
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet24\bin\Debug\net5.0\projet24.pdb
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet24\obj\Debug\net5.0\projet24.csproj.AssemblyReference.cache
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet24\obj\Debug\net5.0\projet24.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet24\obj\Debug\net5.0\projet24.AssemblyInfoInputs.cache
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet24\obj\Debug\net5.0\projet24.AssemblyInfo.cs
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet24\obj\Debug\net5.0\projet24.csproj.CoreCompileInputs.cache
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet24\obj\Debug\net5.0\projet24.dll
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet24\obj\Debug\net5.0\ref\projet24.dll
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet24\obj\Debug\net5.0\projet24.pdb
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projet24\obj\Debug\net5.0\projet24.genruntimeconfig.cache
