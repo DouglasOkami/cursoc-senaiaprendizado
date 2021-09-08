@@ -1,0 +1,16 @@
+C:\Users\dev\Documents\projetoCsharpDouglasGit\aulaUm\bin\Debug\net5.0\aulaUm.exe
+C:\Users\dev\Documents\projetoCsharpDouglasGit\aulaUm\bin\Debug\net5.0\aulaUm.deps.json
+C:\Users\dev\Documents\projetoCsharpDouglasGit\aulaUm\bin\Debug\net5.0\aulaUm.runtimeconfig.json
+C:\Users\dev\Documents\projetoCsharpDouglasGit\aulaUm\bin\Debug\net5.0\aulaUm.runtimeconfig.dev.json
+C:\Users\dev\Documents\projetoCsharpDouglasGit\aulaUm\bin\Debug\net5.0\aulaUm.dll
+C:\Users\dev\Documents\projetoCsharpDouglasGit\aulaUm\bin\Debug\net5.0\ref\aulaUm.dll
+C:\Users\dev\Documents\projetoCsharpDouglasGit\aulaUm\bin\Debug\net5.0\aulaUm.pdb
+C:\Users\dev\Documents\projetoCsharpDouglasGit\aulaUm\obj\Debug\net5.0\aulaUm.csproj.AssemblyReference.cache
+C:\Users\dev\Documents\projetoCsharpDouglasGit\aulaUm\obj\Debug\net5.0\aulaUm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dev\Documents\projetoCsharpDouglasGit\aulaUm\obj\Debug\net5.0\aulaUm.AssemblyInfoInputs.cache
+C:\Users\dev\Documents\projetoCsharpDouglasGit\aulaUm\obj\Debug\net5.0\aulaUm.AssemblyInfo.cs
+C:\Users\dev\Documents\projetoCsharpDouglasGit\aulaUm\obj\Debug\net5.0\aulaUm.csproj.CoreCompileInputs.cache
+C:\Users\dev\Documents\projetoCsharpDouglasGit\aulaUm\obj\Debug\net5.0\aulaUm.dll
+C:\Users\dev\Documents\projetoCsharpDouglasGit\aulaUm\obj\Debug\net5.0\ref\aulaUm.dll
+C:\Users\dev\Documents\projetoCsharpDouglasGit\aulaUm\obj\Debug\net5.0\aulaUm.pdb
+C:\Users\dev\Documents\projetoCsharpDouglasGit\aulaUm\obj\Debug\net5.0\aulaUm.genruntimeconfig.cache
