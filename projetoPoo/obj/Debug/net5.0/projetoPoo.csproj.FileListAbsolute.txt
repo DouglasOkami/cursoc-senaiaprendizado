@@ -1,0 +1,16 @@
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projetoPoo\bin\Debug\net5.0\projetoPoo.exe
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projetoPoo\bin\Debug\net5.0\projetoPoo.deps.json
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projetoPoo\bin\Debug\net5.0\projetoPoo.runtimeconfig.json
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projetoPoo\bin\Debug\net5.0\projetoPoo.runtimeconfig.dev.json
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projetoPoo\bin\Debug\net5.0\projetoPoo.dll
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projetoPoo\bin\Debug\net5.0\ref\projetoPoo.dll
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projetoPoo\bin\Debug\net5.0\projetoPoo.pdb
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projetoPoo\obj\Debug\net5.0\projetoPoo.csproj.AssemblyReference.cache
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projetoPoo\obj\Debug\net5.0\projetoPoo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projetoPoo\obj\Debug\net5.0\projetoPoo.AssemblyInfoInputs.cache
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projetoPoo\obj\Debug\net5.0\projetoPoo.AssemblyInfo.cs
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projetoPoo\obj\Debug\net5.0\projetoPoo.csproj.CoreCompileInputs.cache
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projetoPoo\obj\Debug\net5.0\projetoPoo.dll
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projetoPoo\obj\Debug\net5.0\ref\projetoPoo.dll
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projetoPoo\obj\Debug\net5.0\projetoPoo.pdb
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projetoPoo\obj\Debug\net5.0\projetoPoo.genruntimeconfig.cache
