@@ -1,5 +1,0 @@
-C:\Users\dev\Documents\Douglas Da Silva Ferreira\obj\Debug\net5.0\Douglas Da Silva Ferreira.csproj.AssemblyReference.cache
-C:\Users\dev\Documents\Douglas Da Silva Ferreira\obj\Debug\net5.0\Douglas Da Silva Ferreira.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\dev\Documents\Douglas Da Silva Ferreira\obj\Debug\net5.0\Douglas Da Silva Ferreira.AssemblyInfoInputs.cache
-C:\Users\dev\Documents\Douglas Da Silva Ferreira\obj\Debug\net5.0\Douglas Da Silva Ferreira.AssemblyInfo.cs
-C:\Users\dev\Documents\Douglas Da Silva Ferreira\obj\Debug\net5.0\Douglas Da Silva Ferreira.csproj.CoreCompileInputs.cache

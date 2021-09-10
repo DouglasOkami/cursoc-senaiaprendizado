@@ -91,6 +91,5 @@ namespace projetoCelular
             Console.WriteLine($"Cor {celular.cor}");
             Console.WriteLine($"Tamanho {celular.tamanho}");
         }
-
     }
 }
