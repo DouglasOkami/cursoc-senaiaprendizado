@@ -14,6 +14,11 @@ namespace projetoCelular
             smartPhome.cor = "Black";
             smartPhome.tamanho = "49 polegadas";
 
+            Celular celularThiago = new Celular();
+            celularThiago.modelo = "Sansung";
+            celularThiago.cor = "Red";
+            celularThiago.tamanho = "9 polegadas";
+
             do
             {
                 Console.Clear();
@@ -22,12 +27,14 @@ namespace projetoCelular
                     Console.Write("Status: ");
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("Ligando");
+                    Console.ForegroundColor = ConsoleColor.White;
                 }
                 else
                 {
                     Console.Write("Status: ");
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Desligando");
+                    Console.ForegroundColor = ConsoleColor.White;
                 }
                 Console.WriteLine(smartPhome.StatusDoCelular());
                 Console.WriteLine("Selecione uma opção");
@@ -36,6 +43,7 @@ namespace projetoCelular
                 Console.WriteLine("3 - Efetuar ligação");
                 Console.WriteLine("4 - Enviar mensagem");
                 Console.WriteLine("5 - Sobre o dispositivo");
+                Console.WriteLine("6 - Sobre o dispositivo do Thiago");
                 string opcao = Console.ReadLine();
 
                 switch (opcao)
@@ -43,33 +51,46 @@ namespace projetoCelular
                     case "1":
                         //chamar o método de ligar
                         smartPhome.Ligar();
-                        Theread.Sleep(3000);
+                        celularThiago.Ligar();
+                        Thread.Sleep(3000);
                         break;
                     case "2":
                         //chamar o método de desligar
                         smartPhome.Desligar();
-                        Theread.Sleep(3000);
+                        Thread.Sleep(3000);
                         break;
                     case "3":
                         //chamar o método de EfetuarLicação
-                        smartPhome.EfetuarLigação();
-                        Theread.Sleep(3000);
+                        smartPhome.EfetuarLigacao();
+                        Thread.Sleep(3000);
                         break;
                     case "4":
                         //chamar o método de EnviarMensagem
                         smartPhome.EnviarMensagem();
-                        Theread.Sleep(3000);
+                        Thread.Sleep(3000);
                         break;
                     case "5":
                         //chamar o método do Sobre
                         smartPhome.Sobre();
-                        Theread.Sleep(3000);
+                        Console.ReadKey();
+                        break;
+                    case "6":
+                        // celularThiago.Sobre()
+                        SobreCelular(celularThiago);
+                        Console.ReadKey();
                         break;
                     default:
                         break;
                 }
 
             } while (true);
+        }//Fim main
+        static void SobreCelular(Celular celular)
+        {
+            Console.WriteLine($"Modelo {celular.modelo}");
+            Console.WriteLine($"Cor {celular.cor}");
+            Console.WriteLine($"Tamanho {celular.tamanho}");
         }
+
     }
 }

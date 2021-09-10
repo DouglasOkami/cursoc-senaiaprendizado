@@ -1,0 +1,16 @@
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projetoCelular\obj\Debug\net5.0\projetoCelular.csproj.AssemblyReference.cache
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projetoCelular\obj\Debug\net5.0\projetoCelular.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projetoCelular\obj\Debug\net5.0\projetoCelular.AssemblyInfoInputs.cache
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projetoCelular\obj\Debug\net5.0\projetoCelular.AssemblyInfo.cs
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projetoCelular\obj\Debug\net5.0\projetoCelular.csproj.CoreCompileInputs.cache
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projetoCelular\bin\Debug\net5.0\projetoCelular.exe
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projetoCelular\bin\Debug\net5.0\projetoCelular.deps.json
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projetoCelular\bin\Debug\net5.0\projetoCelular.runtimeconfig.json
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projetoCelular\bin\Debug\net5.0\projetoCelular.runtimeconfig.dev.json
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projetoCelular\bin\Debug\net5.0\projetoCelular.dll
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projetoCelular\bin\Debug\net5.0\ref\projetoCelular.dll
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projetoCelular\bin\Debug\net5.0\projetoCelular.pdb
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projetoCelular\obj\Debug\net5.0\projetoCelular.dll
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projetoCelular\obj\Debug\net5.0\ref\projetoCelular.dll
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projetoCelular\obj\Debug\net5.0\projetoCelular.pdb
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projetoCelular\obj\Debug\net5.0\projetoCelular.genruntimeconfig.cache

@@ -65,9 +65,19 @@ namespace projetoCelular
             }
 
         }//fim EfetuarLigação
-        public void Sobre(){
-            
+         public void Sobre()
+        {
+            if (this.ligado == true)
+            {
+                System.Console.WriteLine($"Modelo: {this.modelo}");
+                System.Console.WriteLine($"Cor: {this.cor}");
+                System.Console.WriteLine($"Tamanho: {this.tamanho}");
+            }
+            else
+            {
+                System.Console.WriteLine("Você precisa ligar o celular para ver as especificações");
+            }
+        }
 
-        }//Fim Sobre
     }
 }
