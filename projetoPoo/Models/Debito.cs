@@ -13,7 +13,10 @@ namespace projetoPoo.Models
         }//fim Depositar
         public void ExibirSaldo()
         {
-            System.Console.WriteLine($"O saldo é de {this.titular} é de {this.saldo}");
+            System.Console.WriteLine($"O saldo é de {this.numero} é de {this.saldo}");
         }//fim Exibir
+        public void DefenirNumero(string numeroDoCartao){
+            this.numero = numeroDoCartao;
+        }
     }//fim Débito
 }
