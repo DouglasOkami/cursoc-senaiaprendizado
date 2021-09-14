@@ -1,0 +1,16 @@
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectCreDe\bin\Debug\net5.0\projectCreDe.exe
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectCreDe\bin\Debug\net5.0\projectCreDe.deps.json
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectCreDe\bin\Debug\net5.0\projectCreDe.runtimeconfig.json
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectCreDe\bin\Debug\net5.0\projectCreDe.runtimeconfig.dev.json
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectCreDe\bin\Debug\net5.0\projectCreDe.dll
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectCreDe\bin\Debug\net5.0\ref\projectCreDe.dll
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectCreDe\bin\Debug\net5.0\projectCreDe.pdb
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectCreDe\obj\Debug\net5.0\projectCreDe.csproj.AssemblyReference.cache
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectCreDe\obj\Debug\net5.0\projectCreDe.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectCreDe\obj\Debug\net5.0\projectCreDe.AssemblyInfoInputs.cache
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectCreDe\obj\Debug\net5.0\projectCreDe.AssemblyInfo.cs
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectCreDe\obj\Debug\net5.0\projectCreDe.csproj.CoreCompileInputs.cache
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectCreDe\obj\Debug\net5.0\projectCreDe.dll
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectCreDe\obj\Debug\net5.0\ref\projectCreDe.dll
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectCreDe\obj\Debug\net5.0\projectCreDe.pdb
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectCreDe\obj\Debug\net5.0\projectCreDe.genruntimeconfig.cache
