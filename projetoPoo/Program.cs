@@ -14,8 +14,6 @@ namespace projetoPoo
         cartaoDebitoDouglas.Depositar(500);
         cartaoDebitoDouglas.ExibirSaldo();
 
-
-
         }//fim main
     }
 }
