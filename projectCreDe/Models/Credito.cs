@@ -6,7 +6,7 @@ namespace projectCreDe.Models
     {
         //atributos
         private double limite;
-        public double limiteDisponivel;
+        private double limiteDisponivel;
         private string senhaC;
         //métodos
         public void DefinirSenhaC(string novaSenhaC)
@@ -22,38 +22,67 @@ namespace projectCreDe.Models
             this.numero = nummeroDigitadoC;
         }
 
-        public void DefinirLimite(double valor)
+        public void DefinirLimite(double novoLimite)
         {
-            this.limite = this.limite + valor;
+            this.limite = novoLimite;
+            this.limiteDisponivel = this.limite;
         }//Fim definir
-        public void PagarFatura()
-        {
-
-        }//Fim Pagar
-        public void Comprar(string senhaDigitadaC, double valorComprar, Credito contaDestinoC)
-        {
-            if (senhaDigitadaC == this.senhaC)
+        public void PagarFatura(double valor)
+        {//quanto tenho que pagar?
+            double fatura = this.limite - this.limiteDisponivel;
+            if (valor >= fatura)
             {
-                //vamos fazer a compra
-                if (this.limite >= valorComprar)
+                this.limiteDisponivel = this.limiteDisponivel + valor;
+            }
+            else
+            {
+                Console.WriteLine("Valor acima do custo da sua fatura");
+            }
+        }//Fim Pagar
+
+
+        // public void Comprar(string senhaDigitadaC, double valorComprar, Credito contaDestinoC)
+        // {
+        //    if (senhaDigitadaC == this.senhaC)
+        //   {
+        //vamos fazer a compra
+        //     if (this.limite >= valorComprar)
+        //     {
+        //          this.limite = this.limite - valorComprar;
+        //         contaDestinoC.limite = contaDestinoC.limite + valorComprar;
+        //         Console.WriteLine("Pagamento efetuado!!");
+        //     }
+        //     else
+        //    {
+        //        Console.WriteLine("Saldo insuficiente");
+        //    }
+        //  }
+        //  else
+        //   {
+        //       Console.WriteLine("Senha inválida");
+        //  }
+        // }//Fim comprar
+        public void Comprar(string senhaDigitada, double valorDaCompra)
+        {
+            if (senhaDigitada == this.senhaC)
+            {
+                if (this.limiteDisponivel >= valorDaCompra)
                 {
-                    this.limite = this.limite - valorComprar;
-                    contaDestinoC.limite = contaDestinoC.limite + valorComprar;
-                    Console.WriteLine("Pagamento efetuado!!");
+                    this.limiteDisponivel = this.limiteDisponivel - valorDaCompra;
                 }
                 else
                 {
-                    Console.WriteLine("Saldo insuficiente");
+                    Console.WriteLine("Limite insuficiente");
                 }
             }
             else
             {
                 Console.WriteLine("Senha inválida");
-            }
-        }//Fim comprar
-        public double LimiteDisponivel()
+            }//fim else
+        }// fim comprar
+        public double ExibirLimiteDisponivel()
         {
-            return this.limite;
-        }
+            return this.limiteDisponivel;
+        }//fim disponivel
     }//Fim class
 }

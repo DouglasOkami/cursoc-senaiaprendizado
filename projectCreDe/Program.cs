@@ -39,23 +39,40 @@ namespace projectCreDe
             Console.WriteLine($"Conta - {cartaoTsukamoto.titular} = Saldo Atual {cartaoTsukamoto.ExibirSaldo()}");
 
             //Cartao crédito
+            Console.ForegroundColor = ConsoleColor.Blue;
             Credito cartaoDouglasF = new Credito();
             cartaoDouglasF.titular = "Douglas";
             cartaoDouglasF.DefinirNumeroC("4567 4567 4567 4567");
             cartaoDouglasF.DefinirSenhaC("2345");
             cartaoDouglasF.DefinirLimite(10000);
 
-            Credito cartaoCarlos = new Credito();
-            cartaoCarlos.titular = "Carlos";
-            cartaoCarlos.DefinirNumeroC("2345 2345 2345 2345");
-            cartaoCarlos.DefinirSenhaC("5432");
-            cartaoCarlos.DefinirLimite(100);
+            // Exibir dados da conta
+
+            Console.WriteLine($"Conta - {cartaoDouglasF.titular}");
+            Console.WriteLine($"Número - {cartaoDouglasF.ExibirNumeroC()}");
+            //fazer comprar
+
+            cartaoDouglasF.Comprar("2345", 4500);
+
+            Console.WriteLine("Compra efetuada");
+            Console.WriteLine($"{cartaoDouglasF.ExibirLimiteDisponivel()}");
+
+            // Credito cartaoCarlos = new Credito();
+            //cartaoCarlos.titular = "Carlos";
+            // cartaoCarlos.DefinirNumeroC("2345 2345 2345 2345");
+            //cartaoCarlos.DefinirSenhaC("5432");
+            //cartaoCarlos.DefinirLimite(100);
 
             //Fazer pagamento
-            cartaoDouglasF.Comprar("2345", 5000, cartaoCarlos);
-            Console.WriteLine($"Conta - {cartaoDouglasF.titular} = Saldo Atual {cartaoDouglasF.LimiteDisponivel()}");
-            Console.WriteLine($"Conta - {cartaoCarlos.titular} = Saldo Atual {cartaoCarlos.LimiteDisponivel()}");
+            //cartaoDouglasF.Comprar("2345", 5000, cartaoCarlos);
+            //Console.WriteLine($"Conta - {cartaoDouglasF.titular} = Saldo Atual {cartaoDouglasF.LimiteDisponivel()}");
+            //Console.WriteLine($"Conta - {cartaoCarlos.titular} = Saldo Atual {cartaoCarlos.LimiteDisponivel()}");
             //depois do pagamento
+
+            //Pagando Fatura
+            cartaoDouglasF.PagarFatura(2000);
+            Console.WriteLine($"Pagamento efetuado");
+            Console.WriteLine($"");
         }//Fim main
     }//Fim Promam
 }
