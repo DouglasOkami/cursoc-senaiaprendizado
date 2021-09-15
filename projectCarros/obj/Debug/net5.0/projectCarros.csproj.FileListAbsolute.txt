@@ -1,0 +1,16 @@
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectCarros\bin\Debug\net5.0\projectCarros.exe
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectCarros\bin\Debug\net5.0\projectCarros.deps.json
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectCarros\bin\Debug\net5.0\projectCarros.runtimeconfig.json
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectCarros\bin\Debug\net5.0\projectCarros.runtimeconfig.dev.json
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectCarros\bin\Debug\net5.0\projectCarros.dll
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectCarros\bin\Debug\net5.0\ref\projectCarros.dll
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectCarros\bin\Debug\net5.0\projectCarros.pdb
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectCarros\obj\Debug\net5.0\projectCarros.csproj.AssemblyReference.cache
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectCarros\obj\Debug\net5.0\projectCarros.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectCarros\obj\Debug\net5.0\projectCarros.AssemblyInfoInputs.cache
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectCarros\obj\Debug\net5.0\projectCarros.AssemblyInfo.cs
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectCarros\obj\Debug\net5.0\projectCarros.csproj.CoreCompileInputs.cache
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectCarros\obj\Debug\net5.0\projectCarros.dll
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectCarros\obj\Debug\net5.0\ref\projectCarros.dll
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectCarros\obj\Debug\net5.0\projectCarros.pdb
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectCarros\obj\Debug\net5.0\projectCarros.genruntimeconfig.cache
