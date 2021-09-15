@@ -40,7 +40,9 @@ namespace projectCreDe
 
             //Cartao crédito
             Console.ForegroundColor = ConsoleColor.Blue;
+
             Credito cartaoDouglasF = new Credito();
+
             cartaoDouglasF.titular = "Douglas";
             cartaoDouglasF.DefinirNumeroC("4567 4567 4567 4567");
             cartaoDouglasF.DefinirSenhaC("2345");
@@ -50,12 +52,14 @@ namespace projectCreDe
 
             Console.WriteLine($"Conta - {cartaoDouglasF.titular}");
             Console.WriteLine($"Número - {cartaoDouglasF.ExibirNumeroC()}");
+            Console.WriteLine($"Saldo Disponível = {cartaoDouglasF.ExibirSaldoDisponivel()}");
+
             //fazer comprar
 
             cartaoDouglasF.Comprar("2345", 4500);
 
             Console.WriteLine("Compra efetuada");
-            Console.WriteLine($"{cartaoDouglasF.ExibirLimiteDisponivel()}");
+            Console.WriteLine($"Saldo Disponível = {cartaoDouglasF.ExibirSaldoDisponivel()}");
 
             // Credito cartaoCarlos = new Credito();
             //cartaoCarlos.titular = "Carlos";
@@ -70,9 +74,11 @@ namespace projectCreDe
             //depois do pagamento
 
             //Pagando Fatura
-            cartaoDouglasF.PagarFatura(2000);
+            cartaoDouglasF.PagarFatura(5000);
             Console.WriteLine($"Pagamento efetuado");
-            Console.WriteLine($"");
+            Console.WriteLine($"Saldo Disponível = {cartaoDouglasF.ExibirSaldoDisponivel()}");
+
+            Console.ForegroundColor = ConsoleColor.White;
         }//Fim main
     }//Fim Promam
 }
