@@ -1,6 +1,7 @@
 ﻿using System;
 using projectCarros.Models;
 using projectCarros.Controllers;
+using System.Collections.Generic;
 
 namespace projectCarros
 {
@@ -8,6 +9,8 @@ namespace projectCarros
     {
         static void Main(string[] args)
         {
+            List<Veiculo> listaDeVeiculos = new List<Veiculo>();
+
             string opcao;
             do
             {
@@ -21,7 +24,8 @@ namespace projectCarros
                     case "1":
                         // Aqui iremos cadastrar um veículo
                         VeiculoController veiculoController = new VeiculoController();
-                        veiculoController.CadastrarVeiculo();
+                        Veiculo veiculoRetornado = veiculoController.CadastrarVeiculo();
+                        listaDeVeiculos.Add(veiculoRetornado);
                         break;
                     case "2":
                         // Aqui iremos listar os veículos cadastrados

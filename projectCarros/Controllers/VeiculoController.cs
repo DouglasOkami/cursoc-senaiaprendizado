@@ -6,8 +6,7 @@ namespace projectCarros.Controllers
 {
     public class VeiculoController
     {
-        public List<Veiculo> listaVeiculo = new List<Veiculo>();
-        public void CadastrarVeiculo()
+        public Veiculo CadastrarVeiculo()
         {
 
             Console.WriteLine("Digite o tipo do veículo");
@@ -23,6 +22,8 @@ namespace projectCarros.Controllers
             int ano = int.Parse(Console.ReadLine());
 
             Veiculo veiculo = new Veiculo(tipo, marca, modelo, ano);
-        }
+
+            return veiculo;
+        }// Fim cadastrar
     }
 }
