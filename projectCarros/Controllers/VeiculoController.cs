@@ -8,7 +8,6 @@ namespace projectCarros.Controllers
     {
         public Veiculo CadastrarVeiculo()
         {
-
             Console.WriteLine("Digite o tipo do veículo");
             string tipo = Console.ReadLine();
 
@@ -21,9 +20,25 @@ namespace projectCarros.Controllers
             Console.WriteLine("Digite o ano do veículo");
             int ano = int.Parse(Console.ReadLine());
 
-            Veiculo veiculo = new Veiculo(tipo, marca, modelo, ano);
+            Console.WriteLine("Digite o N° do Chassi");
+            string chassi = Console.ReadLine();
+
+            Veiculo veiculo = new Veiculo(tipo, marca, modelo, ano, chassi);
 
             return veiculo;
         }// Fim cadastrar
-    }
+
+        //Método para listar os veículos
+        public void ListarVeiculos(List<Veiculo> lista){
+            foreach (var item in lista)
+            {
+                Console.WriteLine($"Marca: {item.Marca} Modelo: {item.Modelo} Ano: {item.Ano} Tipo: {item.Tipo} Chassi: {item.Chassi}");
+            }
+        }//Fim Listar
+        //Método para buscar um veículo através do n° de chassi
+        public Veiculo BuscarVeiculo(string chassiPesquisado, List<Veiculo> lista){
+            Veiculo veiculoRetornado = lista.Find(veiculo => veiculo.Chassi == chassiPesquisado);
+            return veiculoRetornado;
+        }// Fim buscar
+    }//Fim VeiculoController
 }

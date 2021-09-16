@@ -23,12 +23,14 @@ namespace projectCarros.Models
         public string Marca { get; set; }
         public string Modelo { get; set; }
         public int Ano { get; set; }
-        public Veiculo(string _tipo, string _marca, string _modelo, int _ano)
+        public string Chassi {get; set;}
+        public Veiculo(string _tipo, string _marca, string _modelo, int _ano, string _chassi)
         {
             Tipo = _tipo;
             Marca = _marca;
             Modelo = _modelo;
             Ano = _ano;
+            Chassi = _chassi;
         }//Fim Veiculo
     }//FIm Class
 }
