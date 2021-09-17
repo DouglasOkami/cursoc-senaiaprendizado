@@ -20,11 +20,13 @@ namespace projectCarros
             do
             {
                 Console.WriteLine("[1] - Cadastrar Usuário");
-                Console.WriteLine("[2] - Login de Usuário");
-                Console.WriteLine("[3] - Cadastrar Veículo");
-                Console.WriteLine("[4] - Listar Veículos");
-                Console.WriteLine("[5] - Listar Usuários");
-                Console.WriteLine("[6] - Buscar Veículo");
+                Console.WriteLine("[2] - Cadastrar Veículo");
+                Console.WriteLine("[3] - Listar Veículos");
+                Console.WriteLine("[4] - Listar Usuários");
+                Console.WriteLine("[5] - Buscar Veículo");
+                Console.WriteLine("[6] - Buscar Usuário");
+                Console.WriteLine("[7] - Remover Veículo");
+                Console.WriteLine("[8] - Remover Usuário");
                 Console.WriteLine("[0] - Sair");
                 opcao = Console.ReadLine();
 
@@ -36,28 +38,74 @@ namespace projectCarros
                         listaDeUsuarios.Add(usuarioRetornado);
                         break;
                     case "2":
-                        // Aqui iremos login de usuários
-
+                        // Aqui iremos cadastrar um veículo
+                        Console.WriteLine("Digite o email do usuário");
+                        string emailUsuarioPesquisado = Console.ReadLine();
+                        Console.WriteLine("Digite a senha do usuário");
+                        string senhaPesquisado = Console.ReadLine();
+                        Usuario usuarioLoginPesquisado = usuarioController.BuscarUsuario(emailUsuarioPesquisado, listaDeUsuarios);
+                        if (usuarioLoginPesquisado == null && senhaPesquisado == null)
+                        {
+                            Console.WriteLine("Usuário não encontrado");
+                        }
+                        else
+                        {
+                            if (senhaPesquisado != usuarioLoginPesquisado.Senha)
+                            {
+                                Console.WriteLine("senha inválida");
+                            }
+                            else
+                            {
+                                Veiculo veiculoRetornado = veiculoController.CadastrarVeiculo();
+                                listaDeVeiculos.Add(veiculoRetornado);
+                            }
+                        }
                         break;
                     case "3":
-                        // Aqui iremos cadastrar um veículo
-                        Veiculo veiculoRetornado = veiculoController.CadastrarVeiculo();
-                        listaDeVeiculos.Add(veiculoRetornado);
-                        break;
-                    case "4":
                         // Aqui temos que acessar a lista de veículos e exibir cada item da lista
                         veiculoController.ListarVeiculos(listaDeVeiculos);//aqui eu passo o método para lista
                         break;
-                    case "5":
+                    case "4":
                         // Aqui temos que acessar a lista de usuários e exibir cada item da lista
                         usuarioController.ListarUsurios(listaDeUsuarios);//aqui eu passo o método para lista
                         break;
-                    case "6":
-                        // Aqui temos que acessar a lista de usuários e exibir cada item da lista
+                    case "5":
                         Console.WriteLine("Digite o chassi do veículo");
                         string chassiPesquisado = Console.ReadLine();
-                        Veiculo veiculoPesquisado = veiculoController.BuscarVeiculo(chassiPesquisado ,listaDeVeiculos);
-                        Console.WriteLine($"Veículo retornado {veiculoPesquisado.Modelo}");
+                        Veiculo veiculoPesquisado = veiculoController.BuscarVeiculo(chassiPesquisado, listaDeVeiculos);
+                        if (veiculoPesquisado == null)
+                        {
+                            Console.WriteLine("Veículo não encontrado");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"Veículo retornado {veiculoPesquisado.Modelo}");
+                        }
+                        break;
+                    case "6":
+                        Console.WriteLine("Digite o email do usuário");
+                        string emailPesquisado = Console.ReadLine();
+                        Usuario usuarioPesquisado = usuarioController.BuscarUsuario(emailPesquisado, listaDeUsuarios);
+                        if (usuarioPesquisado == null)
+                        {
+                            Console.WriteLine("Usuário não encontrado");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"Usuário retornado {usuarioPesquisado.Nome}");
+                        }
+                        break;
+                    case "7":
+                        // Aqui iremos remover veículos
+                        Console.WriteLine("Digite o chassi do veículo para remover");
+                        string chassiParaRemover = Console.ReadLine();
+                        veiculoController.RemoverVeiculo(chassiParaRemover, listaDeVeiculos);
+                        break;
+                    case "8":
+                        // Aqui iremos remover usuários
+                        Console.WriteLine("Digite o email do usuário para remover");
+                        string emailParaRemover = Console.ReadLine();
+                        usuarioController.RemoverUsuario(emailParaRemover, listaDeUsuarios);
                         break;
                     case "0":
                         // Aqui iremos finalizar a operação

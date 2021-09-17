@@ -9,7 +9,7 @@ namespace projectCarros.Usuarios
         public string Senha { get; set; }
         public int Cpf { get; set; }
 
-        public Usuario(string _nome, string _senha, string _emails, int _cpf)
+        public Usuario(string _nome, string _emails, int _cpf, string _senha)
         {
             Nome = _nome;
             Emails = _emails;
