@@ -20,3 +20,4 @@ C:\Users\dev\Documents\projetoCsharpDouglasGit\projecBancoConectando\BancoConect
 C:\Users\dev\Documents\projetoCsharpDouglasGit\projecBancoConectando\BancoConectando\obj\Debug\net5.0\ref\BancoConectando.dll
 C:\Users\dev\Documents\projetoCsharpDouglasGit\projecBancoConectando\BancoConectando\obj\Debug\net5.0\BancoConectando.pdb
 C:\Users\dev\Documents\projetoCsharpDouglasGit\projecBancoConectando\BancoConectando\obj\Debug\net5.0\BancoConectando.genruntimeconfig.cache
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projecBancoConectando\BancoConectando\obj\Debug\net5.0\BancoConectando.csproj.AssemblyReference.cache

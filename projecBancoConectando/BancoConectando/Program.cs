@@ -3,6 +3,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Linq;
 
 namespace BancoConectando
 {
@@ -10,12 +11,51 @@ namespace BancoConectando
     {
         static void Main(string[] args)
         {
-            List<Usuarios> listaRetornada = ListarUsuarios();
-            ExibirListaDeUsuarios(listaRetornada);
-
-            Console.WriteLine("FOI");
+            string opcao;
+            do
+            {
+                Console.WriteLine("Selecione uma opção");
+                Console.WriteLine("[1] - Cadastrar");
+                Console.WriteLine("[2] - Listar");
+                Console.WriteLine("[3] - Pesquisar usuário");
+                Console.WriteLine("[0] - Sair");
+                opcao = Console.ReadLine();
+                switch (opcao)
+                {
+                    case "1":
+                        Console.WriteLine("Digite o nome do usuário");
+                        string nome = Console.ReadLine();
+                        Console.WriteLine("Digite o email do usuário");
+                        string email = Console.ReadLine();
+                        Console.WriteLine("Digite a senha do usuário");
+                        string senha = Console.ReadLine();
+                        var usuario = new Usuarios(nome, email, senha);
+                        CadastrarUsuario(usuario);
+                        break;
+                    case "2":
+                        ExibirListaDeUsuarios(ListarUsuarios());
+                        break;
+                    case "3":
+                        Console.WriteLine("Digite o número do ID usuário");
+                        int id = int.Parse(Console.ReadLine());
+                        ExibirUsuario(PesquisaPorId(id));
+                        break;
+                    case "0":
+                        Console.WriteLine("Obrigado por usar nosso sistema");
+                        break;
+                    default:
+                        Console.WriteLine("Oção inválida");
+                        break;
+                }
+            } while (opcao != "0");
         }//fim main
 
+        static Usuarios PesquisaPorId(int id)
+        {
+            var listaDeUsuarios = ListarUsuarios();
+            var usuarioRetornado = listaDeUsuarios.FirstOrDefault(usuario => usuario.Id == id);
+            return usuarioRetornado;    
+        }//fim Pesquisa
 
         static void TestarConexaoD()
         {
@@ -146,5 +186,9 @@ namespace BancoConectando
                 Console.WriteLine($"id: {item.Id} Nome: {item.Nome} Email: {item.Email} Senha: {item.Senha}");
             }
         }//fim Exibir
+        static void ExibirUsuario(Usuarios usuario)
+        {
+            Console.WriteLine($"Id: {usuario.Id} Nome: {usuario.Nome} Email: {usuario.Email} Senha: {usuario.Senha}");
+        }//fim usuario
     }
 }
