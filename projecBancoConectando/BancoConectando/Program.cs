@@ -11,24 +11,27 @@ namespace BancoConectando
     {
         static void Main(string[] args)
         {
-            string opcao;
+            string opcao, nome, email, senha;
+            int id;
             do
             {
                 Console.WriteLine("Selecione uma opção");
                 Console.WriteLine("[1] - Cadastrar");
                 Console.WriteLine("[2] - Listar");
                 Console.WriteLine("[3] - Busca por ID");
+                Console.WriteLine("[4] - Atualizar usuário");
+                Console.WriteLine("[5] - Deletar usuário");
                 Console.WriteLine("[0] - Sair");
                 opcao = Console.ReadLine();
                 switch (opcao)
                 {
                     case "1":
                         Console.WriteLine("Digite o nome do usuário");
-                        string nome = Console.ReadLine();
+                        nome = Console.ReadLine();
                         Console.WriteLine("Digite o email do usuário");
-                        string email = Console.ReadLine();
+                        email = Console.ReadLine();
                         Console.WriteLine("Digite a senha do usuário");
-                        string senha = Console.ReadLine();
+                        senha = Console.ReadLine();
                         var usuario = new Usuarios(nome, email, senha);
                         CadastrarUsuario(usuario);
                         break;
@@ -37,8 +40,26 @@ namespace BancoConectando
                         break;
                     case "3":
                         Console.WriteLine("Digite o número do ID usuário");
-                        int id = int.Parse(Console.ReadLine());
+                        id = int.Parse(Console.ReadLine());
                         ExibirUsuario(PesquisaPorId(id));
+                        break;
+                    case "4":
+                        Console.WriteLine("Digite o número do Id do usuário para alterar");
+                        id = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Digite o nome");
+                        nome = Console.ReadLine();
+                        Console.WriteLine("Digite o email");
+                        email = Console.ReadLine();
+                        Console.WriteLine("Digite o senha");
+                        senha = Console.ReadLine();
+
+                        ExibirUsuario(AtualizarUsuario(id, nome, email, senha));
+                        Console.ReadKey();
+                        break;
+                    case "5":
+                        Console.WriteLine("Digite o número do ID usuário");
+                        RemoverUsuario(int.Parse(Console.ReadLine()));
+                        Console.ReadKey();
                         break;
                     case "0":
                         Console.WriteLine("Obrigado por usar nosso sistema");
@@ -89,21 +110,45 @@ namespace BancoConectando
                 throw;
             }
         }//fim Pesquisa
-
-        static void TestarConexaoD()
+        static Usuarios AtualizarUsuario(int id,string nome,string email,string senha)
         {
+            
             try
             {
-                //Tenta executar oque tem aqui dentro 
-                var conn = Conexao.GetConnection();//aqui me retorna o link da conexão
+                var conn = Conexao.GetConnection();
                 conn.Open();
-                Console.WriteLine("Abriu a porta da esperança");
+                //Definindo o comando SQL
+                var query = "update usuarios set usuarioNome = @nome, usuarioEmail = @email, usuarioSenha = @senha where usuarioId = @id";
+                var command = new SqlCommand(query, conn);
+                command.Parameters.Add("@id", SqlDbType.Int).Value = id;
+                command.Parameters.Add("@nome", SqlDbType.VarChar).Value = nome;
+                command.Parameters.Add("@email", SqlDbType.VarChar).Value = email;
+                command.Parameters.Add("@senha", SqlDbType.VarChar).Value = senha;
+
+                command.ExecuteNonQuery();
+
+                conn.Close();
+                return PesquisaPorId(id);
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Mensagem de erro" + ex.Message);
+                Console.WriteLine("Opss, algo não está certo:" + ex.Message);
+                throw;
             }
-        }//Fim Testar
+        }//Fim Atualizar
+        static Usuarios RemoverUsuario(int id)
+        {
+                var conn = Conexao.GetConnection();
+                conn.Open();
+                //Definindo o comando SQL
+                var query = "delete from usuarios where usuarioId = @id";
+                var command = new SqlCommand(query, conn);
+                Usuarios usuario = PesquisaPorId(id);
+                command.Parameters.Add("@id", SqlDbType.Int).Value = id;
+                command.ExecuteNonQuery();
+                Console.WriteLine($"Usuário {usuario.Nome} removido com sucesso");
+                return usuario;
+        }
         static List<Usuarios> InserirNaLista()
         {
             //Criando lista para receber usuarios
@@ -205,7 +250,7 @@ namespace BancoConectando
             catch (Exception ex)
             {
                 Console.WriteLine("OPS econtramos um erro:" + ex.Message);
-                throw ex;
+                throw;
             }
         }// Fim Listar
 
