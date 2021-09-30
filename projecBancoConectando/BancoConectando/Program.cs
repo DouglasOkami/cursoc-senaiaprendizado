@@ -17,7 +17,7 @@ namespace BancoConectando
                 Console.WriteLine("Selecione uma opção");
                 Console.WriteLine("[1] - Cadastrar");
                 Console.WriteLine("[2] - Listar");
-                Console.WriteLine("[3] - Pesquisar usuário");
+                Console.WriteLine("[3] - Busca por ID");
                 Console.WriteLine("[0] - Sair");
                 opcao = Console.ReadLine();
                 switch (opcao)
@@ -52,9 +52,42 @@ namespace BancoConectando
 
         static Usuarios PesquisaPorId(int id)
         {
-            var listaDeUsuarios = ListarUsuarios();
-            var usuarioRetornado = listaDeUsuarios.FirstOrDefault(usuario => usuario.Id == id);
-            return usuarioRetornado;    
+            /* var listaDeUsuarios = ListarUsuarios();
+             var usuarioRetornado = listaDeUsuarios.FirstOrDefault(usuario => usuario.Id == id);
+             return usuarioRetornado;*/
+            try
+            {
+                var conn = Conexao.GetConnection();
+                conn.Open();
+                //Definindo o comando SQL
+                var query = "select * from usuarios where usuarioId = @id";
+
+                var command = new SqlCommand(query, conn);
+                command.Parameters.Add("@id", SqlDbType.Int).Value = id;
+                //Agora vamos criar o Dataset
+                var dataSet = new DataSet();//Nesse momento o dataset está vazio
+                var adpter = new SqlDataAdapter(command);//aqui eu já tenho os dodos do banco
+                adpter.Fill(dataSet);// Inserimos os dados dentro do dataSet.
+                var rows = dataSet.Tables[0].Rows;
+                //Agora vamos transferir os dados do dataSet para um objeto 
+                Usuarios usuario = new Usuarios();
+
+                foreach (DataRow item in rows)
+                {
+                    var colunas = item.ItemArray;
+                    usuario.Id = int.Parse(colunas[0].ToString());
+                    usuario.Nome = colunas[1].ToString();
+                    usuario.Email = colunas[2].ToString();
+                    usuario.Senha = colunas[3].ToString();
+                }
+                conn.Close();
+                return usuario;
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("Opss, algo não está certo:"+ ex.Message);
+                throw;
+            }
         }//fim Pesquisa
 
         static void TestarConexaoD()
