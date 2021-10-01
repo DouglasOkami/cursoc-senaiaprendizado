@@ -38,3 +38,5 @@ C:\Users\dev\Documents\projetoCsharpDouglasGit\projectMVCRazerCRUD\MVCRazerCRUD\
 C:\Users\dev\Documents\projetoCsharpDouglasGit\projectMVCRazerCRUD\MVCRazerCRUD\obj\Debug\net5.0\MVCRazerCRUD.pdb
 C:\Users\dev\Documents\projetoCsharpDouglasGit\projectMVCRazerCRUD\MVCRazerCRUD\obj\Debug\net5.0\MVCRazerCRUD.genruntimeconfig.cache
 C:\Users\dev\Documents\projetoCsharpDouglasGit\projectMVCRazerCRUD\MVCRazerCRUD\obj\Debug\net5.0\MVCRazerCRUD.csproj.CopyComplete
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectMVCRazerCRUD\MVCRazerCRUD\obj\Debug\net5.0\Razor\Views\Aluno\Index.cshtml.g.cs
+C:\Users\dev\Documents\projetoCsharpDouglasGit\projectMVCRazerCRUD\MVCRazerCRUD\obj\Debug\net5.0\Razor\Views\Aluno\Cadastro.cshtml.g.cs
