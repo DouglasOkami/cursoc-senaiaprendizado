@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using MVCRazerCRUD.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +17,20 @@ namespace MVCRazerCRUD.Controllers
         {
             return View();
         }//fim IAction
+        [Route("Cadastrar")]
+        public IActionResult Cadastrar(IFormCollection formulario)
+        {
+            Aluno aluno = new Aluno();
+            //Vamos receber os dados do formulário 
+            aluno.Nome = formulario["alunoNome"];
+            aluno.Email = formulario["alunoEmail"];
+            aluno.Endereco = formulario["alunoEndereco"];
+            aluno.Telefone = formulario["alunoTelefone"];
+            aluno.Escolaridade = formulario["alunoEscolaridade"];
+
+            aluno.CasdastrarAluno(aluno);
+            return LocalRedirect("/");
+        }
         [Route("Cadastro")]
         public IActionResult Cadastro()
         {

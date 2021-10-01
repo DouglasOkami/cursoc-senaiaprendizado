@@ -26,7 +26,7 @@ namespace MVCRazerCRUD.Models
                 var connection = Conexao.GetSqlConnection();
                 connection.Open();
                 //Agora vamos definir o comando SQL
-                var query = "Insert into alunos (alunoNome, alunoEmail, alunoEndereco, alunoTelefone, alunoEscolaridade)";
+                var query = "Insert into alunos (alunoNome, alunoEmail, alunoEndereço, alunoTelefone, alunoEscolaridade) values (@nome, @email, @endereco, @telefone, @escolaridade)";
                 //Agora vamos juntar a query com a conexão
                 var command = new SqlCommand(query, connection);
                 //Agora vamos atribuir os valores para as variáveis - Formato CamelCase
@@ -34,11 +34,12 @@ namespace MVCRazerCRUD.Models
                 command.Parameters.Add("@email", SqlDbType.VarChar).Value = aluno.Email;
                 command.Parameters.Add("@endereco", SqlDbType.VarChar).Value = aluno.Endereco;
                 command.Parameters.Add("@telefone", SqlDbType.VarChar).Value = aluno.Telefone;
-                command.Parameters.Add("@escolarida", SqlDbType.VarChar).Value = aluno.Escolaridade;
+                command.Parameters.Add("@escolaridade", SqlDbType.VarChar).Value = aluno.Escolaridade;
                 //Agora vamos executar a query
                 command.ExecuteNonQuery();
 
                 connection.Close();
+                return aluno;
             }
             catch (Exception)
             {
