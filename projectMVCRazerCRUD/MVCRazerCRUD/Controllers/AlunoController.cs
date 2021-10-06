@@ -40,6 +40,21 @@ namespace MVCRazerCRUD.Controllers
         {
             return View();
         }// Fim Cadastro
+        [Route("~/Aluno/{id}")]
+        public IActionResult Remover(int id)
+        {
+            alunoModel.RemoverAluno(id);
+            return LocalRedirect("/Aluno");
+        }//fim Remover
+        [Route("~/Aluno/Editar/{id}")]
+        public IActionResult Editar(int id)
+        {
+            var listaRetornada = alunoModel.BuscarPorId(id);
+            var alunoRetornado = listaRetornada.Find(aluno => aluno.Id == id);
 
+            ViewBag.alunoRetornado = alunoRetornado;
+
+            return View();
+        }//fim Editar
     }//fim class
 }

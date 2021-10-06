@@ -12,9 +12,39 @@ namespace MVCRazerCRUD.Models
     public class Aluno : UsuarioBase , IAluno
     {
         public string Escolaridade { get; set; }
-        public Aluno AlterarAluno(Aluno aluno)
+        public List<Aluno> BuscarPorId(int id)
         {
-            throw new NotImplementedException();
+            var connection = Conexao.GetSqlConnection();
+            connection.Open();
+
+            var query = "select * from alunos where alunoId = @id";
+            var command = new SqlCommand(query, connection);
+            command.Parameters.Add("@id", SqlDbType.Int).Value = id;
+
+            var dataSet = new DataSet();
+            var adapter = new SqlDataAdapter(command);
+            adapter.Fill(dataSet);
+
+            var rows = dataSet.Tables[0].Rows;
+
+            List<Aluno> listaAlunos = new List<Aluno>();
+
+            foreach (DataRow item in rows)
+            {
+                var colunas = item.ItemArray;
+
+                Aluno aluno = new Aluno();
+
+                aluno.Id = int.Parse(colunas[0].ToString());
+                aluno.Nome = colunas[1].ToString();
+                aluno.Email = colunas[2].ToString();
+                aluno.Endereco = colunas[3].ToString();
+                aluno.Telefone = colunas[4].ToString();
+                aluno.Escolaridade = colunas[5].ToString();
+                listaAlunos.Add(aluno);
+            }
+            connection.Close();
+            return listaAlunos;
         }
         public Aluno CasdastrarAluno(Aluno aluno)
         {
