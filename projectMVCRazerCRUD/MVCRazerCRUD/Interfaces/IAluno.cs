@@ -11,7 +11,7 @@ namespace MVCRazerCRUD.Interfaces
         Aluno CasdastrarAluno(Aluno aluno);
         List<Aluno> ListarAluno();
         Aluno AlterarAluno(Aluno aluno);
-        Aluno RemoverAluno(int id);
+        void RemoverAluno(int id);
 
     }
 }

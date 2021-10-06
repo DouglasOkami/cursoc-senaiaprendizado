@@ -46,39 +46,51 @@ namespace MVCRazerCRUD.Models
         }//Fim Cadastrar
         public List<Aluno> ListarAluno()
         {
-            //Definir a conexão - Precisamos criar a classe de conexão
+            try
+            {
+                //Definir a conexão - Precisamos criar a classe de conexão
+                var connection = Conexao.GetSqlConnection();
+                connection.Open();
+                //query
+                var query = "select * from alunos";
+                var command = new SqlCommand(query, connection);
+                var dataSet = new DataSet();
+                var adapter = new SqlDataAdapter(command);
+                adapter.Fill(dataSet);
+
+                var rows = dataSet.Tables[0].Rows;
+
+                List<Aluno> listaDeAlunos = new List<Aluno>();
+                foreach (DataRow item in rows)
+                {
+                    Aluno aluno = new Aluno();
+                    var colunas = item.ItemArray;
+                    aluno.Id = int.Parse(colunas[0].ToString());
+                    aluno.Nome = colunas[1].ToString();
+                    aluno.Email = colunas[2].ToString();
+                    aluno.Endereco = colunas[3].ToString();
+                    aluno.Telefone = colunas[4].ToString();
+                    aluno.Escolaridade = colunas[5].ToString();
+
+                    listaDeAlunos.Add(aluno);
+                }//fim foreach
+                connection.Close();
+                return listaDeAlunos;
+            }
+            catch(Exception)
+            {
+                throw;
+            }
+        }// fim ListarAluno
+        public void RemoverAluno(int id)
+        {
             var connection = Conexao.GetSqlConnection();
             connection.Open();
-            //query
-            var query = "select * from alunos";
+            var query = "delete from alunos where alunoId = @Id";
             var command = new SqlCommand(query, connection);
-            var dataSet = new DataSet();
-            var adapter = new SqlDataAdapter(command);
-            adapter.Fill(dataSet);
-
-            var rows = dataSet.Tables[0].Rows;
-
-            List<Aluno> listaDeAlunos = new List<Aluno>();
-            foreach (DataRow item in rows)
-            {
-                Aluno aluno = new Aluno();
-                var colunas = item.ItemArray;
-                aluno.Id = int.Parse(colunas[0].ToString());
-                aluno.Nome = colunas[1].ToString();
-                aluno.Email = colunas[2].ToString();
-                aluno.Endereco = colunas[3].ToString();
-                aluno.Telefone = colunas[4].ToString();
-                aluno.Escolaridade = colunas[5].ToString();
-
-                listaDeAlunos.Add(aluno);
-            }//fim foreach
-            connection.Close();
-            return listaDeAlunos;
-        }// fim ListarAluno
-
-        public Aluno RemoverAluno(int id)
-        {
-            throw new NotImplementedException();
-        }
+            command.Parameters.Add("@id", SqlDbType.Int).Value = id;
+            //Aqui executamos a query no banco de dados
+            command.ExecuteNonQuery();
+        }//fim remover aluno
     }
 }

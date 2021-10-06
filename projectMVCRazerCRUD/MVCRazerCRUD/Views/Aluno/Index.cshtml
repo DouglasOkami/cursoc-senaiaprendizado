@@ -1,7 +1,11 @@
-﻿<h1> Aqui vamos criar nossa página de listagem de alunos</h1>
+﻿@{ 
+    var listaDeAlunos = ViewBag.ListaDeAlunos;
+    
+}
+<h1> Aqui vamos criar nossa página de listagem de alunos</h1>
 <table>
     
-    <thead class="table table-striped table-responsive">
+    <table class="table table-striped table-dark table embed-responsive">
         <th>ID</th>
         <th>Nome</th>
         <th>Email</th>
@@ -9,20 +13,20 @@
         <th>Telefone</th>
         <th>Escolaridade</th>
         <th>Ação</th>
-    </thead>
-    @foreach (var item in listaDeAlunos)
-    {
-        <tr>
-            <td>1</td>
-            <td>Carlos</td>
-            <td>Carlos@gmail.com</td>
-            <td>Alameda Barão de Limeira</td>
-            <td>11-90909090</td>
-            <td>Superior Completo</td>
-            <td>
-                <button>Editar</button>
-                <button>Excluir</button>
-            </td>
-        </tr>
-    }
-</table>
+        </thead>
+        @foreach (var item in listaDeAlunos)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Nome</td>
+                <td>@item.Email</td>
+                <td>@item.Endereco</td>
+                <td>@item.Telefone</td>
+                <td>@item.Escolaridade</td>
+                <td>
+                    <button>Editar</button>
+                    <button>Excluir</button>
+                </td>
+            </tr>
+        }
+    </table>

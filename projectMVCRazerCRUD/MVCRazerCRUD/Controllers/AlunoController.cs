@@ -13,10 +13,13 @@ namespace MVCRazerCRUD.Controllers
     {
         //Agora vamos criar o método para receber uma ação
         //e encaminhar para a view
+        Aluno alunoModel = new Aluno();
         public IActionResult Index()
         {
+            ViewBag.ListaDeAlunos = alunoModel.ListarAluno();
             return View();
         }//fim IAction
+
         [Route("Cadastrar")]
         public IActionResult Cadastrar(IFormCollection formulario)
         {
@@ -31,6 +34,7 @@ namespace MVCRazerCRUD.Controllers
             aluno.CasdastrarAluno(aluno);
             return LocalRedirect("/");
         }
+
         [Route("Cadastro")]
         public IActionResult Cadastro()
         {
