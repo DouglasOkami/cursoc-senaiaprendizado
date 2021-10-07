@@ -34,6 +34,21 @@ namespace MVCRazerCRUD.Controllers
             aluno.CasdastrarAluno(aluno);
             return LocalRedirect("/");
         }
+        [Route ("Atualizar")]
+        public IActionResult Atualizar(IFormCollection formulario)
+        {
+            Aluno aluno = new Aluno();
+            //Vamos receber os dados do formulário 
+            aluno.Id = int.Parse(formulario["alunoId"]);
+            aluno.Nome = formulario["alunoNome"];
+            aluno.Email = formulario["alunoEmail"];
+            aluno.Endereco = formulario["alunoEndereco"];
+            aluno.Telefone = formulario["alunoTelefone"];
+            aluno.Escolaridade = formulario["alunoEscolaridade"];
+
+            aluno.AtualizarAluno(aluno);
+            return LocalRedirect("/");
+        }
 
         [Route("Cadastro")]
         public IActionResult Cadastro()

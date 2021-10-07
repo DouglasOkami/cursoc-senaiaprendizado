@@ -2,17 +2,19 @@
     var listaDeAlunos = ViewBag.ListaDeAlunos;
     
 }
-<h1> Aqui vamos criar nossa página de listagem de alunos</h1>
-<table>
-    
-    <table class="table table-striped table-dark table embed-responsive">
+<h1>Página de listagem de alunos</h1>
+
+     <table class="table table-dark table-striped ">
+       <thead>
+        <tr>
         <th>ID</th>
         <th>Nome</th>
         <th>Email</th>
-        <th>Endereço</th>
+        <th>Endereco</th>
         <th>Telefone</th>
         <th>Escolaridade</th>
         <th>Ação</th>
+        </tr>
         </thead>
         @foreach (var item in listaDeAlunos)
         {
@@ -24,9 +26,10 @@
                 <td>@item.Telefone</td>
                 <td>@item.Escolaridade</td>
                 <td>
-                    <a href="https://localhost:44314/Aluno/Editar/@item.Id">Editar</a>
-                    <a href="https://localhost:44314/Aluno/@item.Id">Excluir</a>
+                    <a href="https://localhost:44314/Aluno/Editar/@item.Id" class="btn btn-info">Editar</a>
+                    <a href="https://localhost:44314/Aluno/@item.Id "class="btn btn-danger">Excluir</a>
                 </td>
             </tr>
         }
+        
     </table>
