@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace MVCRazerCRUD.Views.Professor
 {
-    public class Index1Model : PageModel
+    public class cadastroModel : PageModel
     {
         public void OnGet()
         {

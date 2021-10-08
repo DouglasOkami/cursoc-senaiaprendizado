@@ -1,4 +1,31 @@
-﻿@page
-@model MVCRazerCRUD.Views.Professor.EditarModel
-@{
+﻿@{
+    var professor = ViewBag.professorRetornado;
 }
+<h1>Página de Atualizar o Professor</h1>
+<form action='@Url.Action("Atualizar")' method="post" enctype="multipart/form-data">
+    <div class="form-professor-id">
+        <label for="id">ID:</label>
+        <input type="text" name="professorId" id="id" value="@professor.Id" />
+    </div>
+    <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" name="professorNome" placeholder="Ex.Douglas Ferreira" id="nome" value="@professor.Nome" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" name="professorEmail" placeholder="Ex.douglas@gmail.com" id="email" value="@professor.Email" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="endereco">Endereco:</label>
+        <input type="text" name="professorEndereco" placeholder="Ex. São Paulo" id="endereco" value="@professor.Endereco" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="telefone">Telefone:</label>
+        <input type="text" name="professorTelefone" placeholder="Ex. (11) 9999-9999" id="telefone" value="@professor.Telefone" class="form-control" />
+    </div>
+    <div form-group>
+        <label for="cargo">Cargo:</label>
+        <input type="text" name="professorCargo" placeholder="Ex. Professor de Matemática" id="cargo" value="@professor.Cargo" class="form-control" />
+    </div>
+    <button type="submit">Atualizar</button>
+</form>

@@ -8,10 +8,10 @@ namespace MVCRazerCRUD.Interfaces
 {
     interface IProfessores
     {
-        Professor CadastrarProf(Professor prof);
+        Professor CadastrarProf(Professor professsor);
         List<Professor> ListarProf();
-        List<Professor> BuscarPorId();
+        List<Professor> BuscarPorId(int id);
         void RemoverProf(int id);
-        void AtualizarProf(int id);
+        void AtualizarProf(Professor professor);
     }
 }
